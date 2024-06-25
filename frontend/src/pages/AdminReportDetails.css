@@ -1,0 +1,136 @@
+.images-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 1rem;
+  }
+  
+  .comments-list {
+    margin-top: 2rem;
+    padding: 0;
+  }
+  
+  .comment-item {
+    border-radius: 10px;
+    padding: 0.5rem 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .admin-comment {
+    background-color: #f0f0f0;
+    align-self: flex-start;
+  }
+  
+  .user-comment {
+    background-color: #dcf8c6;
+    align-self: flex-end;
+  }
+  
+  .comment-form {
+    margin-top: 2rem;
+  }
+  
+  .comment-form > * {
+    margin-bottom: 1rem;
+  }
+  
+  .comment-form textarea {
+    resize: vertical;
+  }
+  
+  .images-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .image-item {
+    flex: 1 0 calc(33.33% - 20px); /* Three images per row */
+    max-width: calc(33.33% - 20px);
+    position: relative;
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 768px) {
+    .image-item {
+      flex: 1 0 100%; /* One image per row on smaller screens */
+      max-width: 100%;
+    }
+  }
+  
+  .images-container img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .images-container .image-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 768px) {
+    .images-container {
+      grid-template-columns: repeat(2, 1fr); /* Two images per row on smaller screens */
+    }
+  }
+  .images-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 1rem;
+  }
+  
+  .comments-list {
+    margin-top: 2rem;
+    padding: 0;
+  }
+  
+  .comment-item {
+    border-radius: 10px;
+    padding: 0.5rem 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .admin-comment {
+    background-color: #f0f0f0;
+    align-self: flex-start;
+  }
+  
+  .user-comment {
+    background-color: #dcf8c6;
+    align-self: flex-end;
+  }
+  
+  .comment-form {
+    margin-top: 2rem;
+  }
+  
+  .comment-form > * {
+    margin-bottom: 1rem;
+  }
+  
+  .comment-form textarea {
+    resize: vertical;
+  }
+
+  .images-container {
+    display: flex;
+    
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .image-item {
+    flex: 1 0 24%; /* Four images per row with a little gap */
+    max-width: calc(25% - 20px);
+    position: relative;
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 768px) {
+    .image-item {
+      flex: 1 0 100%; /* One image per row on smaller screens */
+      max-width: 100%;
+    }
+  }
+  

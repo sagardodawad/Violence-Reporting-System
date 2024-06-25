@@ -1,0 +1,140 @@
+/**
+ * General styles
+ *
+ * @format
+ */
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: "Arial", sans-serif;
+}
+
+.background-image{
+    background-image: url("https://cdn.pixabay.com/photo/2015/03/17/15/44/case-law-677940_1280.jpg");
+    background-size: cover;
+    background-position: center;
+    
+}
+.landing-page {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  color: white;
+  margin-left: auto;
+  margin-right: auto;
+  /* text-shadow: 0 2px 5px rgba(158, 71, 71, 0.7); */
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(109, 25, 25, 0.7);
+  z-index: 0;
+}
+
+.content {
+  position: relative;
+  z-index: 1;
+  background: rgba(232, 231, 231, 0.8);
+  padding: 2.5rem;
+  border-radius: 15px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+  animation: fadeIn 1s ease-in-out;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.welcome-text {
+  font-size: 3rem;
+  margin-bottom: 2.5rem;
+  text-align: center;
+  color: #ffd700;
+  animation: slideIn 1s ease-in-out;
+}
+
+.tabs-container {
+  margin-top: 2rem;
+}
+
+.tab {
+  color: white;
+  font-size: 1.3rem;
+  transition: all 0.3s ease;
+}
+
+.tab:hover {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  transform: scale(1.1);
+}
+
+/* Login and Register form styles */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+input {
+  padding: 0.75rem;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+button {
+  background: #ffd700;
+  color: black;
+  font-weight: bold;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background: #ffc107;
+  transform: scale(1.05);
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .welcome-text {
+    font-size: 2.2rem;
+  }
+
+  .tab {
+    font-size: 1.1rem;
+  }
+}
+
+/* Animations */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}

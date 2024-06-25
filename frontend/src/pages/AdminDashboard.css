@@ -1,0 +1,100 @@
+/* Tabs */
+.MuiTabs-root {
+    margin-bottom: 1rem;
+  }
+  
+  .MuiTab-root {
+    font-weight: bold;
+  }
+  
+  /* List */
+  .MuiList-root {
+    padding: 0;
+  }
+  
+  .MuiListItem-root {
+    border-radius: 8px;
+    margin-bottom: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .MuiListItem-root:hover {
+    background-color: #f0f0f0;
+  }
+  
+  .MuiListItemText-root {
+    margin-left: 16px;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .MuiListItem-root {
+      margin-bottom: 16px;
+    }
+  }
+  /* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Container styles */
+  .Container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* Typography styles */
+  h4 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  /* Tabs styles */
+  .MuiTabs-root {
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    margin-bottom: 20px;
+  }
+  
+  .MuiTabs-indicator {
+    background-color: #1976d2; /* Indicator color */
+  }
+  
+  /* Tab styles */
+  .MuiTab-root {
+    text-transform: none;
+    font-size: 1rem;
+  }
+  
+  /* List styles */
+  .List {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  
+  .ListItem {
+    cursor: pointer;
+    padding: 10px;
+    border-bottom: 1px solid #ddd; /* Divider between items */
+  }
+  
+  .ListItem:hover {
+    background-color: #f9f9f9; /* Hover color */
+  }
+  
+  /* Text styles */
+  .TextPrimary {
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  
+  .TextSecondary {
+    font-size: 0.9rem;
+    color: #777; /* Secondary text color */
+  }
+  
